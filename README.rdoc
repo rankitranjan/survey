@@ -1,7 +1,7 @@
 == README
 
-Ruby Version ruby 2.4.5
-Rails Version Rails 4.2.11.3
+* Ruby Version ruby 2.4.5
+* Rails Version Rails 4.2.11.3
 
 #How to run
 
