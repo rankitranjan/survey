@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: survey_development
+  database: survey_development122
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

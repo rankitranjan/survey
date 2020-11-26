@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20201126064153) do
     t.datetime "stat_date"
     t.datetime "end_date"
     t.integer  "status"
+    t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -43,11 +44,13 @@ ActiveRecord::Schema.define(version: 20201126064153) do
     t.text     "description"
     t.integer  "question_type"
     t.integer  "questionnaire_id"
+    t.integer  "user_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
 
   add_index "questions", ["questionnaire_id"], name: "index_questions_on_questionnaire_id", using: :btree
+  add_index "questions", ["user_id"], name: "index_questions_on_user_id", using: :btree
 
   create_table "roles", force: :cascade do |t|
     t.string   "name"
@@ -83,4 +86,5 @@ ActiveRecord::Schema.define(version: 20201126064153) do
   add_foreign_key "answers", "questions"
   add_foreign_key "answers", "users"
   add_foreign_key "questions", "questionnaires"
+  add_foreign_key "questions", "users"
 end
