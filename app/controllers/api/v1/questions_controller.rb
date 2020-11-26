@@ -1,4 +1,5 @@
 class Api::V1::QuestionsController < ApplicationController
+  before_action :verify_auth_token
   before_action :set_question, only: [:destroy]
   skip_before_action :verify_authenticity_token
 

@@ -39,6 +39,9 @@
             <td>By: - <%= answer.user.email %></td>
           </tr>
         <% end %>
+        <% if question.answers.blank? %>
+          <p> no response </p>
+        <% end %>
         </table>
     </div>
   <% end %>
