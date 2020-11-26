@@ -45,3 +45,9 @@ group :development do
   gem 'spring'
 end
 
+gem "twitter-bootstrap-rails"
+gem 'devise'
+gem "rolify"
+gem 'cancancan'
+gem 'pry'
+gem 'forgery'
