@@ -1,0 +1,51 @@
+// Place all the styles related to the Questionnaires controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.acc-container {
+  width:140%;
+  margin:30px auto 30px auto;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+  overflow: hidden;
+  color: #333;
+}
+
+.acc-btn { 
+  width:100%;
+  margin:0 auto;
+  padding:20px 25px;
+  cursor:pointer;
+  background: #e3e3e3;
+  border-bottom:1px solid #f5f5f5;
+}
+
+.acc-content {
+  width:100%;
+  margin:0 auto;
+  display: none;
+  background:#f5f5f5;
+  padding:30px;
+  height: auto;
+}
+
+.acc-content p, .acc-content h3, .acc-content h2 {
+    width: 100%;
+}
+
+.acc-container p { 
+  color: #333;
+}
+
+.acc-container h3 {
+    color: #333;
+}
+
+tr:nth-child(odd) { 
+  background-color:#eee; /*soft grey*/ 
+}
+tr:nth-child(even) { 
+  background-color:#fff; /*plain old white*/ 
+}
